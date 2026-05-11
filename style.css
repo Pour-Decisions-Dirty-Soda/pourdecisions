@@ -123,6 +123,12 @@ nav {
     color: #444;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-placeholder {
     width: 45px;
     height: 45px;
@@ -200,6 +206,13 @@ nav a:hover {
     font-weight: bold;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.05);
     animation: bounce 6s infinite ease-in-out;
+    overflow: hidden; /* Keep image inside circle */
+}
+
+.hero-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @keyframes bounce {
@@ -242,6 +255,22 @@ section {
 
 .menu {
     background: #fdfdfd;
+}
+
+.menu-image-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border: 10px solid white;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .menu-grid {
